@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Righteous', sans-serif;
+    background-color: white;
+    color: black;
+    width: 90vw;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    background-color: rgba(25, 23, 23, 0.9);
+    color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.item {
+    color: white;
+    font-size: 30px;
+    font-weight: 120;
+    text-decoration: none;
+    margin: 0 10px;
+    line-height: 60px;
+    padding: 0 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.item:hover {
+    background-color: rgba(88, 6, 6, 0.5)
+}
+
+.item:active {
+    transform: scale(0.9);
+}
+
+#main-page {
+    height: 97vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.main-img {
+    height: 106%;
+    width: 30%;
+    margin-top: -20px;
+}
+
+#about {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600%;
+    font-size: 50px;
+    margin: 20px 0 30px 0;
+}
+
+p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text-img img {
+    width: 600px;
+    height: 50%;
+    margin: 0 150px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+main {
+    width: 100%;
+    display: table;
+}
+
+#menu {
+    width: 100%;
+    margin: 40px;
+    background-color: rgba(51, 6, 6, 0.7);
+    border-radius: 50px;
+    padding: 6px;
+    height: 180vh;
+}
+
+#menu h2 {
+    text-align: center;
+    font-weight: 500%;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-style: double;
+    margin: 55px 0 20px 0;
+    font-size: 70px;
+    letter-spacing: 0.76ch;
+}
+
+.menu-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    height: 90%;
+}
+
+.coffee,
+.deserts {
+    width: 40%;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+#menu-img {
+    width: 50%;
+    height: 30%;
+    margin: -60px 0 10px 0;
+}
+
+#menu-img img {
+    border-radius: 15px;
+}
+
+#descript {
+    height: 53%;
+    width: 73%;
+}
+
+#descript h3 {
+    font-weight: 200;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+#descript p {
+    font-size: 25px;
+    padding: 5px;
+}
+
+#morerock {
+    background-color: rgb(15, 13, 13);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+}
+
+#left-side {
+    width: 50%;
+    margin: 35px 15px;
+}
+
+#left-side h4 {
+    font-size: 40px;
+    font-weight: 200;
+    color: white;
+    margin: 35px 0 25px 40px;
+}
+
+#left-side p {
+    font-size: 25px;
+    color: white;
+    margin-left: 40px;
+}
+
+.instruments {
+    height: 65%;
+    width: 90%;
+    margin-left: 50px;
+}
+
+#right-side {
+    width: 40%;
+    margin: 35px 45px;
+}
+
+#right-side h4 {
+    font-weight: 200;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin: 73px 0;
+}
+
+#form {
+    background-color: rgb(68, 39, 39);
+    width: 97%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 80px 40px;
+}
+
+#form label {
+    display: inline-block;
+    width: 23%;
+    margin-left: 40px;
+    color: white;
+    font-size: 20px;
+    text-align: end;
+}
+
+input {
+    width: 60%;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+button {
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 15px 0 0 200px;
+    font-size: 20px;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(68, 39, 39);
+    justify-content: flex-start;
+    align-items: center;
+    width: 97%;
+    height: 70%;
+    display: none;
+}
+
+#result .info {
+    height: 80%;
+    width: 80%;
+}
+
+.info .details {
+    margin-top: -50px;
+}
+
+.info .details p,
+span {
+    font-size: 20px;
+    font-weight: 150;
+}
+
+footer {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rights {
+    text-align: center;
+}
+
+/* сделать responsive media   */
+
+@media screen and (max-width: 1350px) {
+
+    .main-img {
+        height: 106%;
+        width: 35%;
+        margin-top: -20px;
+    }
+
+    #about {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 90px 0 30px;
+    }
+    #morerock {
+        width: 100%;
+    }
+
+    .instruments {
+        height: 60%;
+        width: 90%;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+
+    .main-img {
+        height: 106%;
+        width: 35%;
+        margin-top: -20px;
+    }
+
+    #about {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 90px 0 30px;
+    }
+    #morerock {
+        width: 100%;
+    }
+
+    .instruments {
+        height: 60%;
+        width: 90%;
+        margin-left: 50px;
+    }
+}
