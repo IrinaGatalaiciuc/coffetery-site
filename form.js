@@ -1,3 +1,82 @@
+const coffees = [
+    {
+        name: "Espresso",
+        price: "2"
+    },
+    {
+        name: "Americano",
+        price: "2"
+    },
+    {
+        name: "Cappuchino",
+        price: "2.5"
+    },
+    {
+        name: "Irish with whiskey",
+        price: "9"
+    },
+    {
+        name: "Ice Latte",
+        price: "6"
+    },
+    {
+        name: "Espresso con Panna",
+        price: "5.5"
+    },
+    {
+        name: "Caramel Macchiato",
+        price: "6"
+    }
+]
+
+const deserts = [
+    {
+        name: "Chocolate Cupcake",
+        price: "3.5"
+    },
+    {
+        name: "Blackout Cake",
+        price: "6"
+    },
+    {
+        name: "Tiramisu",
+        price: "6"
+    },
+    {
+        name: "Red Velvet Cake",
+        price: "7"
+    },
+    {
+        name: "Caramel Cake",
+        price: "6.5"
+    },
+    {
+        name: "Coconut Cake",
+        price: "6.5"
+    }
+]
+
+const coffeesDiv = document.getElementById('coffees')
+const desertsDiv = document.getElementById('deserts')
+
+coffees.forEach(coffee => {
+    coffeesDiv.innerHTML += `
+    <li class="coffee">
+<p>${coffee.name}</p>
+<span></span>
+<p>${coffee.price}$</p>
+    </li>`
+})
+
+deserts.forEach(desert => {
+    desertsDiv.innerHTML += `
+    <li class="coffee">
+<p>${desert.name}</p>
+<span></span>
+<p>${desert.price}$</p>
+    </li>`
+})
+
 const bandname = document.getElementById('name')
 const membersnumber = document.getElementById('membersnumber')
 const email = document.getElementById('email')
@@ -5,7 +84,7 @@ const phone = document.getElementById('phone')
 const btn = document.getElementById('btn')
 const result = document.getElementById('result')
 
-btn.addEventListener("click", function(b) {
+btn.addEventListener("click", function (b) {
     b.preventDefault()
     console.log(`Name:${bandname.value}`)
     console.log(`Members:${membersnumber.value}`)

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <title>Coffee Shop Rockoffee</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <nav>
@@ -17,55 +15,43 @@
             <a class="item" href="#morerock">More Rock</a>
         </nav>
     </header>
-    <section id="main-page">
-        <div class="main-img">
-            <img src="images/guitar.avif" alt="guitar">
-        </div>
-        <div id="about">
-            <div class="text">
-                <h1>Coffee Shop Rockoffee</h1>
-                <p>Are you in passion in <strong>coffee and rock</strong>? Here is the place you are looking for.
-                    Everyday our customers enjoy rock music and drink 100% dark natural coffee.</p>
+    <main>
+        <section id="main-page">
+            <div class="main-img">
+                <img src="images/guitar.avif" alt="guitar">
+            </div>
+            <div id="about">
+                <div class="text">
+                    <h1>Coffee Shop Rockoffee</h1>
+                    <p>Are you in passion in <strong>coffee and rock</strong>? Here is the place you are looking for.
+                        Everyday our customers enjoy rock music and drink 100% dark natural coffee.</p>
 
-                <div class="text-img">
-                    <img src="images/coffee.avif" alt="ice coffee">
+                    <div class="text-img">
+                        <img src="images/coffee.avif" alt="ice coffee">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <main>
+        </section>
+
         <section id="menu">
             <h2>Menu</h2>
             <div class="menu-more">
-                <div class="coffee">
+                <div class="coffees" id="coffees">
                     <div id="menu-img">
                         <img src="images/icecoffee.avif" alt="ice coffee">
                     </div>
-                    <div id="descript">
+                    <ul class="coffees" >
                         <h3>Coffee</h3>
-                        <p>Espresso ......................................... 4$</p>
-                        <p>Americano ....................................... 4$</p>
-                        <p>Cappuchino ..................................... 5$</p>
-                        <p>Irish with whiskey .......................... 9$</p>
-                        <p>Ice Latte .......................................... 7$</p>
-                        <p>Espresso con Panna ................... 5.5$</p>
-                        <p>Caramel Macchiato ......................... 7$</p>
-                    </div>
+                    </ul>
                 </div>
-
-                <div class="deserts">
+                <div class="deserts" id="deserts">
                     <div id="menu-img">
                         <img src="images/muffins.avif" alt="muffins">
                     </div>
-                    <div id="descript">
+                    <ul class="deserts">
                         <h3>Deserts</h3>
-                        <p>Chocolate Cupcake .................... 3.5$</p>
-                        <p>Blackout Cake ................................ 6$</p>
-                        <p>Tiramisu ........................................... 6$</p>
-                        <p>Red Velvet Cake .............................. 7$</p>
-                        <p>Caramel Cake ............................... 6.5$</p>
-                        <p>Coconut Cake ............................... 6.5$</p>
-                    </div>
+                    </ul>
+
                 </div>
             </div>
 
@@ -113,4 +99,5 @@
 
     <script src="form.js"></script>
 </body>
+
 </html>

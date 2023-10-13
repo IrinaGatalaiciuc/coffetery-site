@@ -11,7 +11,7 @@ body {
     font-family: 'Righteous', sans-serif;
     background-color: white;
     color: black;
-    width: 90vw;
+    width: 95vw;
     scroll-behavior: smooth;
 }
 
@@ -54,6 +54,13 @@ header {
 
 .item:active {
     transform: scale(0.9);
+}
+
+main {
+    width: 100%;
+    position: static;
+    margin: 0;
+    padding: 0;
 }
 
 #main-page {
@@ -102,11 +109,6 @@ p {
     margin-top: 10px;
 }
 
-main {
-    width: 100%;
-    display: table;
-}
-
 #menu {
     width: 100%;
     margin: 40px;
@@ -135,8 +137,8 @@ main {
     height: 90%;
 }
 
-.coffee,
-.deserts {
+#coffees,
+#deserts {
     width: 40%;
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 15px;
@@ -157,22 +159,34 @@ main {
     border-radius: 15px;
 }
 
-#descript {
+.descript {
     height: 53%;
     width: 73%;
 }
 
-#descript h3 {
+.descript h3 {
     font-weight: 200;
     font-size: 40px;
     text-align: center;
     margin: 10px 0 10px 0;
 }
 
-#descript p {
+.descript p {
     font-size: 25px;
     padding: 5px;
-}
+}  
+
+#coffees li,
+#deserts li {
+    font-size: 20px;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 10px;
+      }
+ span {
+    flex: 1;
+    border-bottom: 4px dotted #333;
+  }
 
 #morerock {
     background-color: rgb(15, 13, 13);
@@ -295,7 +309,7 @@ footer {
 
 /* сделать responsive media   */
 
-@media screen and (max-width: 1350px) {
+/* @media screen and (max-width: 1350px) {
 
     .main-img {
         height: 106%;
@@ -350,4 +364,8 @@ footer {
         width: 90%;
         margin-left: 50px;
     }
-}
+} */
+
+
+
+
